@@ -1,0 +1,47 @@
+.mn-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.mn-c {
+  border: 2px solid green;
+  margin-top: 400px;
+  width: 40%;
+  /* height: 500px; */
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* .top-img {
+  width: 50%;
+  margin: 0 auto;
+} */
+
+.top-img img {
+  width: 200px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ask-log {
+  text-align: center;
+}

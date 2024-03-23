@@ -1,0 +1,51 @@
+h1 {
+  margin: 20px 0;
+}
+
+.ct-bu {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cont-border {
+  /* border: 2px solid green; */
+  width: 70%;
+  height: 60vh;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-name img {
+  width: 40px;
+  height: 40px;
+  border: 2px dotted green;
+  border-radius: 100%;
+}
+
+.img-name {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.title,
+.tb-data {
+  display: flex;
+  gap: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.dep-main {
+  width: fit-content;
+  margin: 0 auto;
+}

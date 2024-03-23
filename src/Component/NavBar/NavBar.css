@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  height: 100px;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-01 {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  gap: 1rem;
+}
+
+.nav-02 ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  font-size: 20px;
+}
+img {
+  width: 200px;
+}
+
+.int-s {
+  display: block;
+  font-weight: 100;
+}
+
+.nav-02 ul li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: aqua;
+}

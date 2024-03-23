@@ -1,0 +1,106 @@
+.ab-content {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.ab-01 {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  transform-style: preserve-3d;
+}
+
+.ab-01 img {
+  width: 1903px;
+  height: 665px;
+  /* opacity: 0.2; */
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.text-bd {
+  background-color: white;
+  top: 665px;
+  position: relative;
+  z-index: 2;
+}
+
+.moto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: white;
+}
+
+.moto h1 {
+  margin: 0;
+}
+
+.vl-cover {
+  height: 412px;
+  display: flex;
+  background-image: url("/public/sch-imgs/img-4.jpg");
+  background-size: cover;
+  background-position: top 30% center;
+  background-origin: content-box, padding-box;
+  margin-bottom: 100px;
+}
+
+.vl-p {
+  color: white;
+  font-size: xx-large;
+}
+
+.vision {
+  background-color: black;
+  opacity: 0.7;
+  padding: 0 30px;
+}
+
+.values {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+  padding: 0 30px;
+}
+.mission {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  padding: 0 30px;
+}
+
+.hist {
+  width: 70%;
+  margin: 0 auto;
+  font-size: x-large;
+  line-height: 40px;
+  margin-bottom: 100px;
+}
+
+.hist h1 {
+  text-align: center;
+}
+
+.sch-str {
+  display: flex;
+  box-shadow: 1px 1px 20px rgb(131, 131, 131);
+  margin-bottom: 100px;
+}
+
+.sch-str-ti {
+  text-align: center;
+}
+
+.sch-str-in {
+  padding: 0 40px;
+  padding-bottom: 10px;
+}
+
+.primary {
+  background-color: rgb(115, 147, 115);
+}

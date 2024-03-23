@@ -1,0 +1,114 @@
+.contact-details {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* font-size: 25px; */
+  border-bottom: 1px solid grey;
+}
+
+.img-name img {
+  width: 40px;
+  height: 40px;
+  border: 2px dotted green;
+  border-radius: 100%;
+}
+
+.img-name {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex: 0.35;
+}
+
+.u-em {
+  display: flex;
+  flex: 0.35;
+}
+
+.u-role {
+  display: flex;
+  flex: 0.2;
+}
+
+.u-act {
+  display: flex;
+  flex: 0.2;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(141, 160, 141);
+  border-radius: 100%;
+}
+
+.opt:hover {
+  cursor: pointer;
+  background-color: rgb(14, 40, 14);
+}
+
+.opt-b {
+  color: white;
+}
+
+.staff-det {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.img img {
+  width: 40px;
+  height: 40px;
+  border: 2px dotted green;
+  border-radius: 100%;
+}
+
+.stf-d {
+  display: flex;
+  align-items: center;
+  /* gap: 10rem; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.opt-stf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(141, 160, 141);
+  border-radius: 100%;
+}
+
+.opt-stf:hover {
+  cursor: pointer;
+  background-color: rgb(14, 40, 14);
+}
+
+.stf {
+  width: 200px;
+}
+
+.stf-1:hover {
+  cursor: pointer;
+}
+
+.status {
+  background-color: rgb(46, 255, 43);
+  width: fit-content;
+  padding: 3px;
+  border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+.set-rou {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+
+.set-but button {
+  width: 282px;
+  height: 84px;
+  font-size: large;
+  background-color: rgb(115, 147, 115);
+  border: 0px;
+  color: white;
+}
+
+.set-but button:hover {
+  background-color: rgb(14, 40, 14);
+  cursor: pointer;
+}

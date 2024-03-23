@@ -1,0 +1,72 @@
+.cu-01 {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  transform-style: preserve-3d;
+}
+
+.cu-01 img {
+  width: 1903px;
+  height: 665px;
+  opacity: 0.7;
+  transform: translateZ(-5px) scale(1.5);
+}
+.cu-container {
+  top: 665px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.cu-info {
+  background-color: rgb(193, 230, 193);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  text-align: center;
+}
+
+.cu-det h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.cu-det p {
+  font-size: 20px;
+}
+
+.cu-icons {
+  font-size: 60px;
+  margin-bottom: 2px;
+}
+.laslas {
+  color: green;
+  margin-top: 20px;
+}
+
+.laslas a {
+  text-decoration: none;
+}
+
+.message {
+  margin: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.message h1 {
+  padding: 60px 0 20px 0;
+}
+
+.form-b {
+  width: 485px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.form-b input {
+  height: 53px;
+}

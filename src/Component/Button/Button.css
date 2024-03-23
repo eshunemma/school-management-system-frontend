@@ -1,0 +1,32 @@
+.button {
+  width: max-content;
+  padding: 10px;
+  background-color: rgb(0, 76, 0);
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 10px;
+  box-shadow: 0.4px 0.4px 20px rgb(0, 76, 0);
+}
+
+.button a {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+}
+.button a:hover {
+  text-decoration: dotted;
+  color: rgb(0, 76, 0);
+}
+
+.button:hover {
+  background-color: yellow;
+  cursor: pointer;
+  transition: ease-in 0.4s;
+  color: rgb(0, 76, 0);
+  border-color: yellow;
+}
+
+.btn-lg button {
+  width: 100px;
+  height: 45px;
+}
