@@ -11,6 +11,7 @@ import Staffs from "./Pages/Portal/Manage_App/Staffs";
 import Class from "./Pages/Portal/Manage_App/Class";
 import Students from "./Pages/Portal/Manage_App/Student";
 import Departments from "./Pages/Portal/Manage_App/Departments";
+import CreateStudent from "./Pages/Portal/Manage_App/CreateStudent";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact-us" element={<ContactUs />} />
+          <Route path="admissions" element={<CreateStudent />} />
           <Route path="portal" element={<Login />} />
           {/* <Route path="register" element={<SingUp />} /> */}
           <Route path="portal/dashboard" element={<Dashboard />} />
