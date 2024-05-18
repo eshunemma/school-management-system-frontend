@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { decodedToken } from "../../../utils/helperFunctions";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import ButtonIn from "../../../Component/Button/ButtonIn";
 import "./Dashboard.css";

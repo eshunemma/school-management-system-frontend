@@ -4,6 +4,7 @@ import Button from "../../Component/Button/Button";
 import NavBar from "../../Component/NavBar/NavBar";
 import QuickInfo from "../../Component/QuickInfo/QuickInfo";
 import Footer from "../../Component/Footer/Footer";
+import HomeSwiper from "../../Component/Swiper/HomeSwiper";
 
 const HomePage = () => {
   const [showFirstNavbar, setShowFirstNavbar] = useState(true);
@@ -34,43 +35,44 @@ const HomePage = () => {
       <div>
         {showFirstNavbar ? (
           <>
-            <QuickInfo /> <NavBar />
+            <QuickInfo /> <NavBar jack={false} />
           </>
         ) : (
-          <NavBar />
+          <NavBar jack={true} />
         )}
       </div>
       <div className="hp-01">
-        <img src="/sch-imgs/img-1.jpg" alt="ima" />
+        <HomeSwiper />
       </div>
       <div className="hp-vision">
         <div className="hp-v01">
-          <div>
-            <h2>Vision</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              dolorem, enim ipsam reprehenderit iusto velit eum quaerat nemo
-              iure dolorum quibusdam provident consequuntur quae deserunt!
-              Blanditiis, voluptate officiis? Ipsam, unde.
-            </p>
+          <div className="hp-v01-01">
+            <span class="material-symbols-outlined">church</span>
+            <div>
+              <p>Campus Life</p>
+              <p>We Blend Right</p>
+            </div>
           </div>
-          <div>
-            <h2>Values</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              dolorem, enim ipsam reprehenderit iusto velit eum quaerat nemo
-              iure dolorum quibusdam provident consequuntur quae deserunt!
-              Blanditiis, voluptate officiis? Ipsam, unde.
-            </p>
+          <div className="hp-v01-02">
+            <span class="material-symbols-outlined">school</span>
+            <div>
+              <p>Graduation</p>
+              <p>Certifications</p>
+            </div>
           </div>
-          <div>
-            <h2>Mission</h2>
-            <p>
-              LLorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias dolorem, enim ipsam reprehenderit iusto velit eum
-              quaerat nemo iure dolorum quibusdam provident consequuntur quae
-              deserunt! Blanditiis, voluptate officiis? Ipsam, unde.
-            </p>
+          <div className="hp-v01-03">
+            <span class="material-symbols-outlined">sports_soccer</span>
+            <div>
+              <p>Athletics</p>
+              <p>Sport Clubs</p>
+            </div>
+          </div>
+          <div className="hp-v01-04">
+            <span class="material-symbols-outlined">group</span>
+            <div>
+              <p>Athletics</p>
+              <p>Sport Clubs</p>
+            </div>
           </div>
         </div>
         <div className="hp-ad01">
@@ -94,7 +96,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="metrics">
+      {/* <div className="metrics">
         <div className="hp-metrics">
           <div className="met-01">
             <span className="material-symbols-outlined icons">school</span>
@@ -122,19 +124,84 @@ const HomePage = () => {
             <img src="/sch-imgs/img-6.jpg" alt="sohis" />
           </div>
         </div>
+      </div> */}
+      <div>
+        <div className="about-hm">
+          <div className="ab-hm-t">
+            <div className="ab-hm-1">
+              <img src="sohis-logo.png" alt="" />
+              <h3>About SOHIS</h3>
+            </div>
+            <div className="ab-hm-2">
+              <h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat et saepe, blanditiis error rem reprehenderit voluptate
+                pariatur. Cum inventore eos accusamus nihil fugit! Sed at
+                repudiandae deleniti natus, sint tempora ullam sapiente autem
+                asperiores ipsam repellat commodi, veniam hic iste libero
+                consequatur quo quos! Doloremque unde sint aliquam adipisci
+                itaque.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, nisi odit? Praesentium a, harum esse delectus sint
+                quo fuga nisi mollitia. Nesciunt sapiente amet qui ullam
+                consequuntur provident aspernatur dolor, ratione nam voluptates
+                non laudantium corrupti laboriosam voluptatibus rem accusamus
+                excepturi. Suscipit numquam inventore eveniet odit ducimus
+                sapiente similique repellat ipsa sed dolore facilis, iste
+                praesentium mollitia. Illum fugiat doloremque est laborum quam
+                vel, veniam eveniet tempore dignissimos reiciendis harum,
+                perspiciatis voluptatum, cupiditate sapiente libero temporibus
+                ducimus assumenda! Esse exercitationem dolor ut eos sed
+                similique ad nesciunt praesentium. Dolores minus delectus
+                aliquid repellat dignissimos explicabo ad nobis pariatur porro
+                laborum.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="hp-learn">
-        <h1>
-          An educational centre of the highest quality that meets international
-          standards
-        </h1>
-        <p className="ln-m">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat
-          repudiandae cum ducimus accusamus unde in fugit autem. Error omnis
-          officia distinctio quos minus explicabo est enim quidem praesentium
-          nihil?
-        </p>
-        <Button name="> About SOHIS" link="/" class="hp-but" />
+      <div className="quicks">
+        <div className="quicks-1">
+          <h3>News & Updates</h3>
+          <a href="/">Read All News</a>
+          <img src="/sch-imgs/img-2.jpg" alt="" />
+          <p>SOHIS Cultural day celebration.</p>
+          <Button name="Read More" link="/" />
+        </div>
+        <div className="quicks-2">
+          <h3>
+            Quick Links
+            <span class="material-symbols-outlined">link</span>
+          </h3>
+          <ul>
+            <li>
+              <a href="/">Alumni & Donors</a>
+              <div className="underline"></div>
+            </li>
+            <li>
+              <a href="/">Athletic Calendar</a>
+              <div className="underline"></div>
+            </li>
+            <li>
+              <a href="/">All AEC Events</a>
+              <div className="underline"></div>
+            </li>
+            <li>
+              <a href="/">Partnership & Out Reach</a>
+              <div className="underline"></div>
+            </li>
+            <li>
+              <a href="/">Academic Programs</a>
+              <div className="underline"></div>
+            </li>
+            <li>
+              <a href="/">Tution And Fees</a>
+              <div className="underline"></div>
+            </li>
+          </ul>
+        </div>
       </div>
       <Footer />
     </div>

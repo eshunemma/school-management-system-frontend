@@ -5,7 +5,7 @@ import ButtonIn from "../../../Component/Button/ButtonIn";
 import { useMutation } from "@apollo/client";
 import { Login_Mutation } from "../../../utils/Mutations";
 import { setToken } from "../../../utils/helperFunctions";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();

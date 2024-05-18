@@ -3,7 +3,6 @@ import Input from "../../../Component/Inputs/Input";
 import ButtonIn from "../../../Component/Button/ButtonIn";
 import { useMutation } from "@apollo/client";
 import { AddStaff_Mutation } from "../../../utils/Mutations";
-import { useNavigate, Link } from "react-router-dom";
 const CreateStudent = () => {
   const [AddStaffData] = useMutation(AddStaff_Mutation);
 
@@ -23,8 +22,6 @@ const CreateStudent = () => {
       },
     }));
   };
-
-  console.log(val);
 
   const handleSignup = async (e) => {
     try {

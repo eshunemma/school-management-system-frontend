@@ -12,7 +12,7 @@
   transform: translateZ(-5px) scale(1.5);
 }
 .cu-container {
-  top: 665px;
+  /* top: 665px; */
   position: relative;
   z-index: 2;
   width: 100%;
@@ -65,6 +65,7 @@
   flex-direction: column;
   gap: 1rem;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .form-b input {

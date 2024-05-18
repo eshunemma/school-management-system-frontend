@@ -2,19 +2,36 @@ import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const styleheader = { height: "50px" };
+  const styleimage = { width: "110px" };
+  const styletext = { fontSize: "15px" };
   return (
-    <header>
+    <header style={props.jack ? styleheader : null}>
       <div className="nav-01">
-        <img src="sohisLOGO.png" alt="sohis-logo" />
+        <img
+          style={props.jack ? styleimage : null}
+          src="sohisLOGO.png"
+          alt="sohis-logo"
+        />
       </div>
       <div className="nav-02">
-        <ul>
-          <Link to={`/`}>Home</Link>
-          <Link to={`/about`}>About Us</Link>
-          <Link to={`/admissions`}>Admissions</Link>
-          <Link to={`/contact-us`}>Contact</Link>
-          <Link to={`/portal`}>Portal</Link>
+        <ul style={props.jack ? styletext : null}>
+          <Link to={`/`}>
+            <p className="nav-p">Home</p>
+          </Link>
+          <Link to={`/about`}>
+            <p className="nav-p">About Us</p>
+          </Link>
+          <Link to={`/admissions`}>
+            <p className="nav-p">Admissions</p>
+          </Link>
+          <Link to={`/contact-us`}>
+            <p className="nav-p">Contact</p>
+          </Link>
+          <Link to={`/portal`}>
+            <p className="nav-p">Portal</p>
+          </Link>
         </ul>
       </div>
     </header>

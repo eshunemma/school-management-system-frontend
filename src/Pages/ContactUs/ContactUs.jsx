@@ -7,9 +7,9 @@ const ContactUs = () => {
   return (
     <div>
       <NavBar />
-      <div className="cu-01">
+      {/* <div className="cu-01">
         <img src="/sch-imgs/img-1.jpg" alt="ima" />
-      </div>
+      </div> */}
       <div className="cu-container">
         <div className="cu-info">
           <div className="cu-det">

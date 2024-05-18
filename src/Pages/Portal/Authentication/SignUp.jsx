@@ -4,7 +4,6 @@ import Input from "../../../Component/Inputs/Input";
 import ButtonIn from "../../../Component/Button/ButtonIn";
 import { useMutation } from "@apollo/client";
 import { SignUp_Mutation } from "../../../utils/Mutations";
-import { useNavigate, Link } from "react-router-dom";
 
 const SingUp = ({ closeModal }) => {
   const [SignUpData] = useMutation(SignUp_Mutation);

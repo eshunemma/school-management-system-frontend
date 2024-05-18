@@ -4,7 +4,6 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Login from "./Pages/Portal/Authentication/Login";
-import SingUp from "./Pages/Portal/Authentication/SignUp";
 import Dashboard from "./Pages/Portal/Dashoboard/Dashboard";
 import Users from "./Pages/Portal/Manage_App/Users";
 import Staffs from "./Pages/Portal/Manage_App/Staffs";
@@ -12,6 +11,7 @@ import Class from "./Pages/Portal/Manage_App/Class";
 import Students from "./Pages/Portal/Manage_App/Student";
 import Departments from "./Pages/Portal/Manage_App/Departments";
 import CreateStudent from "./Pages/Portal/Manage_App/CreateStudent";
+import HomeSwiper from "./Component/Swiper/HomeSwiper";
 
 function App() {
   return (

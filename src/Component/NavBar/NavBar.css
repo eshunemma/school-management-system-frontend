@@ -22,7 +22,21 @@ header {
   gap: 4rem;
   list-style: none;
   font-size: 20px;
+  text-decoration: none;
 }
+
+.nav-p {
+  color: green;
+}
+.nav-p:hover {
+  color: rgb(89, 89, 175);
+  font-size: 22px;
+}
+
+ul a:link {
+  text-decoration: none;
+}
+
 img {
   width: 200px;
 }
