@@ -12,34 +12,45 @@ import Students from "./Pages/Portal/Manage_App/Student";
 import Departments from "./Pages/Portal/Manage_App/Departments";
 import CreateStudent from "./Pages/Portal/Manage_App/CreateStudent";
 import HomeSwiper from "./Component/Swiper/HomeSwiper";
+import Button from "./Component/Button/Button";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="admissions" element={<CreateStudent />} />
-          <Route path="portal" element={<Login />} />
-          {/* <Route path="register" element={<SingUp />} /> */}
-          <Route path="portal/dashboard" element={<Dashboard />} />
-          <Route path="portal/dashboard" element={<Dashboard />} />
-          <Route path="portal/dashboard/manage-users" element={<Users />} />
-          <Route path="portal/dashboard/manage-staffs" element={<Staffs />} />
-          <Route path="portal/dashboard/manage-classes" element={<Class />} />
-          <Route
-            path="portal/dashboard/manage-students"
-            element={<Students />}
-          />
-          <Route
-            path="portal/dashboard/manage-departments"
-            element={<Departments />}
-          />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <div className="underconstruction">
+        <img src="sohisLOGO.png" alt="sohis-logo" />
+        <h1>Page Not Available</h1>
+        <p>
+          The page you are looking for is temporarily unavailable on mobile.
+        </p>
+        <Button name={"Go Home"} link={"/"} />
+      </div>
+      <div className="real-content">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="admissions" element={<CreateStudent />} />
+            <Route path="portal" element={<Login />} />
+            {/* <Route path="register" element={<SingUp />} /> */}
+            <Route path="portal/dashboard" element={<Dashboard />} />
+            <Route path="portal/dashboard" element={<Dashboard />} />
+            <Route path="portal/dashboard/manage-users" element={<Users />} />
+            <Route path="portal/dashboard/manage-staffs" element={<Staffs />} />
+            <Route path="portal/dashboard/manage-classes" element={<Class />} />
+            <Route
+              path="portal/dashboard/manage-students"
+              element={<Students />}
+            />
+            <Route
+              path="portal/dashboard/manage-departments"
+              element={<Departments />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 
